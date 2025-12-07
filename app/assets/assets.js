@@ -34,9 +34,17 @@ import banner2 from "./image 13.png"
 import banner3 from "./image 14.png"
 import banner4 from "./image 11.png"
 import menu from "./menu.svg"
+import verify from "./verify.svg"
 import hero_section from "./heroImage.png"
+import arrow from "./arrow.svg"
+import correct from "./correct.svg"
+import trash from "./trash.svg"
 
 export const assets = {
+  trash,
+  correct,
+  arrow,
+  verify,
   hero_section,
   menu,
   cart,
@@ -76,18 +84,18 @@ export const assets = {
   export const products = [
     {
     id:"aaa",
-    image:[shirt8,shirt9,shirt10],
-    name:"",
-    description:"",
+    image:[shirt2,shirt9,shirt10],
+    name:"Basic Cotton T-Shirt",
+    description:"High-quality cotton T-shirt suitable for daily wear.",
     price:100,
-    sizes:[],
+    sizes:["S", "M", "L", "XL"],
     bestseller: true,
-    category:"",
-    colors:[],
+    category:"tshirt",
+    colors:["white", "black", "gray"],
   },
   {
     id: "p1",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt1,shirt2,shirt3],
     name: "Basic Cotton T-Shirt",
     description: "High-quality cotton T-shirt suitable for daily wear.",
     price: 120,
@@ -98,7 +106,7 @@ export const assets = {
   },
   {
     id: "p2",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt3,shirt1,shirt3],
     name: "Oversized Hoodie",
     description: "Soft oversized hoodie perfect for winter.",
     price: 350,
@@ -109,7 +117,7 @@ export const assets = {
   },
   {
     id: "p3",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt4,shirt2,shirt1],
     name: "Casual Polo Shirt",
     description: "Breathable polo shirt ideal for outings.",
     price: 220,
@@ -120,7 +128,7 @@ export const assets = {
   },
   {
     id: "p4",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt6,shirt4,shirt5],
     name: "Slim Fit Shirt",
     description: "Formal slim-fit shirt suitable for work.",
     price: 280,
@@ -131,7 +139,7 @@ export const assets = {
   },
   {
     id: "p5",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt5,shirt5,shirt6],
     name: "Sport Training T-shirt",
     description: "Moisture-wicking T-shirt for training.",
     price: 150,
@@ -142,7 +150,7 @@ export const assets = {
   },
   {
     id: "p6",
-    image: [shirt8,shirt9,shirt10],
+    image: [shirt7,shirt4,shirt6],
     name: "Summer Linen Shirt",
     description: "Lightweight linen shirt perfect for hot weather.",
     price: 300,
@@ -151,4 +159,27 @@ export const assets = {
     category: "linen",
     colors: ["beige", "white"],
   },
+  {
+    id: "p7",
+    image: [short1,shirt4,shirt6],
+    name: "Summer Linen Shirt",
+    description: "Lightweight linen shirt perfect for hot weather.",
+    price: 300,
+    sizes: ["M", "L"],
+    bestseller: false,
+    category: "linen",
+    colors: ["beige", "white"],
+  },
+  {
+    id: "p8",
+    image: [pants1,shirt4,shirt6],
+    name: "Summer Linen Shirt",
+    description: "Lightweight linen shirt perfect for hot weather.",
+    price: 300,
+    sizes: ["M", "L"],
+    bestseller: false,
+    category: "pants",
+    colors: ["beige", "white"],
+  },
+  
 ];

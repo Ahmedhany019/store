@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { assets } from '@/app/assets/assets';
+import { assets } from '../../app/assets/assets';
 
 
 const MobileMenu = ({links}) => {

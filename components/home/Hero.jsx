@@ -1,11 +1,17 @@
 import { assets } from "@/app/assets/assets";
-import { angkor } from "@/app/layout";
 import Image from "next/image";
 import React from "react";
 import Button from "../ui/Button";
 import Banner from "./BrandsSlider";
+import { Angkor } from "next/font/google";
+
+const angkor = Angkor({
+  subset:['latin'],
+  weight:['400']
+})
 
 const Hero = () => {
+
   return (
     <section className="bg-background md:h-[calc(100dvh-(142px))] py-8 relative">
       <div
@@ -15,7 +21,7 @@ const Hero = () => {
         {/* details */}
         <div className="flex-1 md:w-1/2 w-full flex flex-col gap-2 justify-center h-full">
           {/* Title */}
-          <h3 className={`text-[36px] lg:text-head ${angkor.className}`}>
+          <h3 className={`${angkor.className} text-[36px] lg:text-head `}>
             FIND CLOTHES THAT
             MATCHES YOUR STYLE
           </h3>

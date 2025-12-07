@@ -1,16 +1,12 @@
-import { Angkor,Akatab } from "next/font/google";
+import {Akatab } from "next/font/google";
 import "./globals.css";
-import ReactQueryProvider from "@/providers/QueryProvider";
 import Timeline from "@/components/Timeline";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WrapperClient from "@/providers/WrapperClient";
+import ClientProvider from "@/providers/ClientProvider";
+import { Toaster } from "react-hot-toast";
 
-export const angkor = Angkor({
-  subset:['latin'],
-  weight:['400']
-})
-export const akatab = Akatab({
+const akatab = Akatab({
   subset:['latin'],
   weight:['400']
 })
@@ -26,10 +22,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${akatab.className} antialiased`}
       >
-        <WrapperClient>
-          {children}
-        </WrapperClient>
+      <ClientProvider>
+      <Timeline />
+      <Navbar />
+        {children}
+      <Footer />
+      <Toaster />
+      </ClientProvider>
       </body>
     </html>
   );
-}
+}``

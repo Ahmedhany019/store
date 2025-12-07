@@ -32,3 +32,6 @@
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+.card::-webkit-scrollbar{
+  display: none;
+}

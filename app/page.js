@@ -1,3 +1,4 @@
+
 import Collection from "@/components/home/Collection";
 import Hero from "@/components/home/Hero";
 import NewArrivals from "@/components/home/NewArrivals";
@@ -9,10 +10,9 @@ export default function Home() {
     <main>
       <Hero />
       <NewArrivals />
-      {/* 
       <TopSelling />
       <Collection />
-      <Testimonials /> */}
+      <Testimonials />
     </main>
   );
 }

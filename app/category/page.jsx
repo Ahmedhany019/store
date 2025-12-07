@@ -1,8 +1,11 @@
+import Category from '@/components/category/Category'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <section className='py-12'>
+      <Category />
+    </section>
   )
 }
 

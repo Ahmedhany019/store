@@ -1,10 +1,14 @@
-import { angkor } from "@/app/layout";
+import { Angkor } from "next/font/google";
 import React from "react";
 
-const Title = ({ text }) => {
+const angkor = Angkor({
+  subset:['latin'],
+  weight:['400']
+})
+const Title = ({ text,position ="center",size }) => {
   return (
-    <div
-      className={`${angkor.className} text-mb-head md:text-head text-center my-12 uppercase`}
+    <div style={{textAlign:position, fontSize:size}}
+      className={`${angkor.className} text-mb-head md:text-head my-12 uppercase`}
     >
       {text}
     </div>
