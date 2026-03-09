@@ -58,9 +58,9 @@ const Navbar = () => {
 
         <div className='flex gap-4 justify-end w-1/2'>
           {/* Search */}
-          <div className='relative bg-[#F0F0F0] rounded-full md:block hidden lg:w-[85%] md:w-[80%]'>
+          {/* <div className='relative bg-[#F0F0F0] rounded-full md:block hidden lg:w-[85%] md:w-[80%]'>
             <Search placeholder={"Search For Product"}/>
-          </div>
+          </div> */}
           <Image src={assets.search} alt="menu" className='md:hidden'/>
           {/* Profile & Cart */}
           <div className='flex justify-center gap-4 items-center lg:w-[15%] md:w-[20%]'>
